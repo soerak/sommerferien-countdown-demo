@@ -1,4 +1,4 @@
-# ger-sommerferien-countdown
+# sommerferien-countdown-demo
 
 
 ## INFO: This is a Project oriented around the german language. Thus this README and the whole Website is in german.
