@@ -9,4 +9,4 @@ Ein Countdown zu dem Anfang der Sommerferien 2021, sowie wann die Mathematik MSA
  
 ## Vorschau
 
-~~Eine funktionierende Vorschau des Codes ist unter [**DIESER WEBSITE**](https://benjaminhenrich.000webhostapp.com) verfügbar.~~
+Eine funktionierende Vorschau des Codes ist unter [**DIESER WEBSITE**][([https://benjaminhenrich.000webhostapp.com](https://soerak.github.io/sommerferien-countdown-demo/)](https://soerak.github.io/sommerferien-countdown-demo/)) verfügbar.
