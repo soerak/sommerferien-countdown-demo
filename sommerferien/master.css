@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+body {
+  animation-name: background;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.title {
+  font-family: Roboto;
+  font-weight: 600;
+  text-align: center;
+  font-size: 60pt;
+
+  color: white;
+
+  -webkit-text-stroke: 1.5px black;
+
+  line-height: 30%;
+}
+
+.subtitle {
+  font-family: Roboto;
+  font-weight: 300;
+  text-align: center;
+  font-size: 30pt;
+
+  color: white;
+
+  -webkit-text-stroke: 2px black;
+
+
+}
+
+
+p {
+
+  font-family: Roboto;
+  font-weight: 600;
+  text-align: center;
+  font-size: 30pt;
+
+  color: white;
+
+  -webkit-text-stroke: 2px black;
+
+  line-height: 20%;
+
+}
+
+.mode_change_btn {
+  font-family: Roboto;
+  font-weight: 100;
+  text-align: center;
+
+  border-radius: 4px;
+}
+
+
+@keyframes background {
+  0% {background-color: #FFAAAA}
+  33% {background-color: #AAFFAA}
+  66% {background-color: #AAAAFF}
+  100% {background-color: #FFAAAA}
+}

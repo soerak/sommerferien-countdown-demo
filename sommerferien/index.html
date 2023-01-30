@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BENJAMINS SCHULHELFER</title>
+    <link rel="stylesheet" href="master.css">
+
+</head>
+<body>
+
+    <br><br><br><br><br><br><br><br>
+
+    <div class="subtitle">
+        WANN SIND DIE
+    </div>
+
+  <br>
+
+    <div class="title">
+        SOMMERFERIEN
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <div class="countdown">
+
+      <p id="tage"></p>
+      <p id="stunden"></p>
+      <p id="mins"></p>
+      <p id="secs"></p>
+      <h2 id="ende"></h2>
+
+        <script>
+            var zieldatum = new Date("Jul 07, 2023 15:05:00").getTime();
+
+            var clock = setInterval(function() {
+
+            var jetzt = new Date().getTime();
+            var zeit = zieldatum - jetzt;
+
+            var tage = Math.floor(zeit / (1000 * 60 * 60 * 24));
+            var stunden = Math.floor((zeit % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minuten = Math.floor((zeit % (1000 * 60 * 60)) / (1000 * 60));
+            var sekunden = Math.floor((zeit % (1000 * 60)) / 1000);
+
+            document.getElementById("tage").innerHTML = tage + " Tage "
+            document.getElementById("stunden").innerHTML = stunden + " Stunden "
+            document.getElementById("mins").innerHTML = minuten + " Minuten "
+            document.getElementById("secs").innerHTML = sekunden + " Sekunden "
+            console.log("executed clock.setInterval()");
+
+            if (zeit < 0) {
+              clearInterval(clock);
+              document.getElementById("tage").innerHTML = ""
+              document.getElementById("stunden").innerHTML = ""
+              document.getElementById("mins").innerHTML = ""
+              document.getElementById("secs").innerHTML = ""
+              document.getElementById("ende").innerHTML = "<div class='subtitle'>SOMMERFERIEN!!</div>";
+            }
+            }, 1000);
+        </script>
+
+    </div>
+
+    <br><br>
+
+    <div class="mode_change_btn" align="center">
+      <form method="get" action="./index_dark.html">
+          <button type="submit">Change to Darkmode</button>
+      </form>
+    </div>
+
+
+
+</body>
+</html>
